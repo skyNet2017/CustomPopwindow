@@ -9,6 +9,17 @@ buildscript {
         google()
         mavenCentral()
     }
+    ext{
+        groupId='com.github.pinguo-zhouwei'
+        versionCode = '2.1.1'
+        isPublisToLocal=false
+
+        releaseUrl='https://nexus.hss01248.tech/repository/maven-releases/'
+        snapshotUrl='https://nexus.hss01248.tech/repository/maven-snapshots/'
+        publicUrl='https://nexus.hss01248.tech/#browse/browse:maven-public:'
+        uname='xxx'
+        pw='yyy'
+    }
 
     dependencies {
         classpath "com.android.tools.build:gradle:7.4.2"
@@ -24,6 +35,7 @@ allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
         google()
+        mavenCentral()
     }
 }
 
